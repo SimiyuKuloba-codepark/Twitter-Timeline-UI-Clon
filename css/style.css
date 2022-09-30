@@ -1,0 +1,370 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITIES*/
+/* colors & font type*/
+:root{
+    --primary-color: rgb(4, 113, 255);
+    --primary-dark-color: rgb(4, 48, 105);
+    --dark-background-color: rgba(191, 221, 247, 0.315);
+    --primary-font:'Plus Jakarta Sans', sans-serif;
+    --border-color: rgb(202, 201, 201);
+}    
+
+/* OVERAL DISPLAY */
+html, body{
+    font-family: var(--primary-font);
+    /* line-height: 1.7em; */
+    font-weight: 400;
+}
+
+/* ELEMENTS */
+/* anchor links */
+a{
+    text-decoration: none;
+    color: #000 ;
+}
+
+/* LAYOUT STRUCTURE */
+/* padding y-axis */
+.py-1{padding: 10px 0;}
+.py-2{padding: 20px 0;}
+.py-3{padding: 30px 0;}
+
+/* BUTTONS */
+/* basic button */
+.btn{
+    /* display: inline-block; */
+    font-size: .85rem;
+    font-weight: 500;
+    color: #fff ;
+    background: var(--primary-color) ;
+    padding: .8rem .8rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+.btn:hover{
+    background: var(--primary-dark-color);
+}
+
+.border-bottom{
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* list */
+ul{
+    list-style: none;
+}
+
+/* forms */
+form input:focus{
+    outline: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blue{
+    color: var(--primary-color);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* MAIN PAGE */
+/* MAIN PAGE */
+/* MAIN PAGE */
+#main .container{
+    display: flex;
+}
+
+#main .container #menu{ flex: 2;}
+#main .container #timeline{ flex: 4;}
+#main .container #trends{ flex: 3;}
+
+/* menu */
+/* menu */
+#main .container #menu .menu-container{
+    padding: 1rem 1.2rem 1rem 2.5rem;
+}
+
+#main .container #menu .menu-container .top{
+    height: 80vh;
+    /* background: #777; */
+}
+
+#main .container #menu .menu-container .top .logo{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+}
+
+#main .container #menu .menu-container .top .logo img{
+    width: 30px;
+    object-fit: cover;
+
+}
+
+#main .container #menu .menu-container .top .nav-links .link{
+    display: flex;
+    justify-content: flex-start;
+    /* text-align: left; */
+    align-items: center;
+    align-content: center;
+    /* margin: .5rem 0rem; */
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+}
+
+#main .container #menu .menu-container .top .nav-links .link:hover{
+    background: var(--dark-background-color);
+    cursor: pointer;
+}
+
+#main .container #menu .menu-container .top .nav-links .link .icon{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    margin-right: 1rem;
+}
+
+#main .container #menu .menu-container .top .nav-links .link .icon i{
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+#main .container #menu .menu-container .top .nav-links .link .link-text a{
+    align-self: flex-start;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+#main .container #menu .menu-container .top .tweet-btn{
+    padding-top: 1rem;
+}
+
+/* bottom */
+#main .container #menu .menu-container .bottom{
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#main .container #menu .menu-container .bottom .info{
+    display: flex;
+}
+
+#main .container #menu .menu-container .bottom .info .profile-pic{
+    margin-right: .6rem;
+}
+
+#main .container #menu .menu-container .bottom .profile-id .profile-username a{
+    color: grey;
+}
+
+#main .container #menu .menu-container .bottom .profile-pic img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    /* background: #999 */
+}
+
+/* timeline */
+/* timeline */
+#main .container #timeline{
+    border-left: 1px solid var(--border-color) ;
+    border-right: 1px solid var(--border-color);
+}
+
+#main .container #timeline .timeline-container .heading{
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+#main .container #timeline .timeline-container #prompt{
+    display: flex;
+    padding: 1rem 1rem;
+    width: 100%;
+}
+
+/* profile-pic */
+#main .container #timeline .timeline-container #prompt .profile-pic{
+    margin-right: 1rem;
+}
+
+#main .container #timeline .timeline-container #prompt .profile-pic img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#main .container #timeline .timeline-container #prompt .tweet-form{
+    width: 100%;
+}
+
+/* tweet-form */
+#main .container #timeline .timeline-container #prompt .tweet-form form .form-section input{
+    padding: .5rem 0rem;
+    border: none;
+    font-size: 1.2rem;
+    background: none;
+}
+
+#main .container #timeline .timeline-container #prompt .tweet-form form .two{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main .container #timeline .timeline-container #prompt .tweet-form form .two .extra-input{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
+#main .container #timeline .timeline-container #prompt .tweet-form form .two .extra-input i{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+#main .container #timeline .timeline-container #prompt .tweet-form form .two .extra-input i:hover{
+    background: var(--dark-background-color);
+    cursor: pointer;
+}
+
+#main .container #timeline .timeline-container #prompt .tweet-form form .submit .submit-btn{
+    font-size: 1rem;
+    color: #fff ;
+    background: var(--primary-color) ;
+    padding: .4rem .8rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#main .container #timeline .timeline-container #prompt .tweet-form form .submit .submit-btn:hover{
+    background: var(--primary-dark-color);
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section{
+    padding: 1rem;
+    display: flex;
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section:hover{
+    cursor: pointer;
+    background: var(--dark-background-color);
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section .profile-picture{
+    margin-right: 1rem;
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section .profile-picture img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section .tweet-details{
+    width: 100%;
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section .tweet-details .name{
+    display: flex;
+    justify-content: space-between;
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section .tweet-details .name .user{
+    display: flex;
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section .tweet-details .name .user .usersname a{ 
+    font-weight: bold;
+    margin-right: .5rem;
+
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section .tweet-details .name .user .usersname span{
+    margin-right: .5rem;
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section .tweet-details .tweet p{
+    padding: .5rem 0rem;
+    width: 95%;
+    font-size: .9rem;
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section .tweet-details .tweet img{
+    border-radius: 1rem;
+    border: 1px solid grey;
+}
+
+#main .container #timeline .timeline-container #tweets .tweets-container .tweet-section .tweet-details .reaction{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: .5rem;
+}
+
+
+/* trends */
+/* trends */
+#main .container #trends .trends-container{
+    padding: .5rem 3rem .5rem 2rem;
+}
+
+#main .container #trends .trends-container .search-twitter{
+    margin-bottom: 1rem;
+}
+
+#main .container #trends .trends-container .search-twitter input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    background: var(--dark-background-color);
+    border-radius: 2rem;
+}
+
+#main .container #trends .trends-container .trends{
+    background: var(--dark-background-color);
+    /* padding: 1rem; */
+    border-radius: 1rem;
+}
+
+#main .container #trends .trends-container .trends .heading{
+    padding: 1rem;
+}
+
+#main .container #trends .trends-container .trends-lineup .item{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 2rem; */
+    padding: 1rem;
+}
+
+#main .container #trends .trends-container .trends-lineup .item:hover{
+    background: rgba(191, 221, 247, 0.603);
+}
