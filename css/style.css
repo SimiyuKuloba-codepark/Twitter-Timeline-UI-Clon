@@ -107,6 +107,7 @@ img{
 #main .container #menu .menu-container .top .logo{
     display: flex;
     justify-content: flex-start;
+    padding-left: 1rem;
     padding-bottom: 1rem;
 }
 
@@ -119,10 +120,8 @@ img{
 #main .container #menu .menu-container .top .nav-links .link{
     display: flex;
     justify-content: flex-start;
-    /* text-align: left; */
     align-items: center;
     align-content: center;
-    /* margin: .5rem 0rem; */
     padding: .5rem 1rem;
     border-radius: 2rem;
 }
@@ -135,12 +134,12 @@ img{
 #main .container #menu .menu-container .top .nav-links .link .icon{
     width: 2rem;
     height: 2rem;
-    position: relative;
+    display: flex;
+    align-items: center;
     margin-right: 1rem;
 }
 
 #main .container #menu .menu-container .top .nav-links .link .icon i{
-    position: absolute;
     font-size: 1.5rem;
 }
 
@@ -233,15 +232,28 @@ img{
 
 #main .container #timeline .timeline-container #prompt .tweet-form form .two .extra-input{
     display: flex;
-    justify-content: space-between;
-    width: 15%;
 }
 
-#main .container #timeline .timeline-container #prompt .tweet-form form .two .extra-input i{
+#main .container #timeline .timeline-container #prompt .tweet-form form .two .extra-input .icon{
+    height: 1rem;
+    width: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1rem 1rem;
+}
+
+#main .container #timeline .timeline-container #prompt .tweet-form form .two .extra-input .icon:first-child{
+    margin-left: 0rem;
+}
+
+#main .container #timeline .timeline-container #prompt .tweet-form form .two .extra-input .icon i{
     color: var(--primary-color);
     font-size: 1.2rem;
-    margin-right: 1rem;
-    padding: .5rem;
+    /* display: inline-block; */
+    padding: 1rem 1rem;
     border-radius: 50%;
 }
 
